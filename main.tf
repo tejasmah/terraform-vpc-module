@@ -18,11 +18,11 @@ provider "aws" {
   #access_key = "AKIAX3OD6IVG3SETPFDR"
   #secret_key = "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"
   assume_role {
-     role_arn   = var.assume_role
+     role_arn   = "arn:aws:iam::885726421659:role/cross-account"
      external_id = "12345"
 }
 }
- variable "assume_role" {}
+
  #add new
 
 
