@@ -17,7 +17,12 @@ provider "aws" {
   region = "us-east-1"
   #access_key = "AKIAX3OD6IVG3SETPFDR"
   #secret_key = "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"
+  assume_role {
+     role_arn   = var.assume_role
+     external_id = "12345"
 }
+}
+ variable "assume_role" {}
 
 
 
